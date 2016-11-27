@@ -462,6 +462,39 @@ template {
 
 /*Everything above is part of the general normalize.css file. Everything below are my css additions */
 
+.main {
+    background-color: #dbdde0;
+}
+
 .heading {
-	color: blue;
+	color: #333;
+}
+
+#nav {
+        text-align: center;
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        border-radius: 5px;
+        width: 90%;
+    }
+    
+li {
+  display: inline-block;
+}
+    
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+}
+    
+li a:hover {
+        
+    background-color: #111;
 }
