@@ -459,3 +459,9 @@ template {
 [hidden] {
   display: none;
 }
+
+/*Everything above is part of the general normalize.css file. Everything below are my css additions */
+
+.heading {
+	color: blue;
+}
