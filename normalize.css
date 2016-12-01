@@ -470,14 +470,8 @@ template {
 	color: #333;
 }
 
-@media (max-width 600px) {
-	.heading {
-	color: #ffcc99;
-	}
-}
-
 #nav {
-        text-align: center;
+        text-align: right;
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -486,22 +480,13 @@ template {
         border-radius: 5px;
         width: 90%;
 		font-size: 20px;
+		position: fixed;
 }
-	
-@media (max-width 480px) {
-	#nav {
-        text-align: center;
-        list-style-type: none;
-        margin: auto;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ffcc99;
-        border-radius: 5px;
-        width: 90%;
-		font-size: 20px;
-	}
+
+#navTitle {
+		text-align: left;
 }
-    
+
 li {
   display: inline-block;
 }
