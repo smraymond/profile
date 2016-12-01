@@ -467,7 +467,8 @@ template {
 }
 
 #nav {
-        list-style-type: none;
+        text-align: center;
+	list-style-type: none;
         margin: auto;
         padding: 0;
         overflow: hidden;
