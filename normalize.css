@@ -466,6 +466,10 @@ template {
     background-color: #dbdde0;
 }
 
+.heading {
+     font: bold;
+}
+
 #nav {
         text-align: center;
         list-style-type: none;
