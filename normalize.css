@@ -482,7 +482,7 @@ template {
     text-decoration: none;
     font-family: Arial;
     float: left;
-    padding-left: 50px;
+    padding: 14px 20px 14px 50px;
 }
 
 #bar {
