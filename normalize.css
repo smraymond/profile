@@ -480,7 +480,6 @@ template {
         border-radius: 5px;
         width: 90%;
 		font-size: 20px;
-		position: fixed;
 }
 
 
@@ -493,15 +492,6 @@ li a {
     display: block;
     color: white;
     text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial;
-}
-
-li p #navTitle {
-	display: block;
-    color: white;
-    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arial;
