@@ -470,6 +470,12 @@ template {
 	color: #333;
 }
 
+@media (max-width 600px) {
+	.heading {
+	color: #ffcc99;
+	}
+}
+
 #nav {
         text-align: center;
         list-style-type: none;
