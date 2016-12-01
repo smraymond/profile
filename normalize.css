@@ -467,14 +467,26 @@ template {
 }
 
 #nav {
-        text-align: center;
-	list-style-type: none;
+        list-style-type: none;
         margin: auto;
         padding: 0;
         overflow: hidden;
         background-color: #333;
         border-radius: 5px;
-	font-size: 20px;
+        vertical-align: top;
+}
+
+#navTop {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    float: left;
+    padding-left: 50px;
+}
+
+#bar {
+    float: right;
 }
 
 li {
@@ -484,24 +496,12 @@ li {
 li a {
     display: block;
     color: white;
-    padding: 14px 16px;
+    padding: 14px 20px 14px 20px;
     text-decoration: none;
     font-family: Arial;
-    float: right;
-}
-
-li p {
-    display: block;
-    color: white;
-    text-align: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Arial;
-    float: left;
 }
     
 li a:hover {
-        
     background-color: #111;
-	color: #42dff4
+    color: #42dff4
 }
