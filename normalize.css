@@ -471,7 +471,7 @@ template {
 }
 
 #nav {
-        text-align: right;
+        text-align: center;
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -483,9 +483,7 @@ template {
 		position: fixed;
 }
 
-#navTitle {
-		text-align: left;
-}
+
 
 li {
   display: inline-block;
@@ -494,7 +492,16 @@ li {
 li a {
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+li p #navTitle {
+	display: block;
+    color: white;
+    text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arial;
