@@ -471,7 +471,6 @@ template {
 }
 
 #nav {
-        text-align: center;
         list-style-type: none;
         margin: auto;
         padding: 0;
@@ -509,4 +508,5 @@ li p {
 li a:hover {
         
     background-color: #111;
+	color: #42dff4
 }
