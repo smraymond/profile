@@ -466,10 +466,6 @@ template {
     background-color: #dbdde0;
 }
 
-.heading {
-	color: #333;
-}
-
 #nav {
         list-style-type: none;
         margin: auto;
@@ -478,10 +474,8 @@ template {
         background-color: #333;
         border-radius: 5px;
         width: 90%;
-		font-size: 20px;
+	font-size: 20px;
 }
-
-
 
 li {
   display: inline-block;
@@ -490,19 +484,20 @@ li {
 li a {
     display: block;
     color: white;
-    text-align: right;
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arial;
+    float: right;
 }
 
 li p {
-	display: block;
+    display: block;
     color: white;
     text-align: left;
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arial;
+    float: left;
 }
     
 li a:hover {
