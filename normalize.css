@@ -481,6 +481,24 @@ template {
         vertical-align: top;
 }
 
+.content {
+        text-align: center;
+        width: 75%;
+        border: 5px;
+        padding: 20px;
+        margin: auto;
+        border-radius: 5px;
+        background-color: #7e7e7e;
+}
+
+#intro1 {
+  color: #f2f5f9;
+}
+#intro2 {
+  color: black;
+  font-family: Castellar;
+}
+
 li {
   display: inline-block;
 }
