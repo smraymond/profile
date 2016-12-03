@@ -464,13 +464,14 @@ template {
 
 .main {
     background-color: #dbdde0;
+    padding-top: 100px;
 }
 
 #heading {
      font: bold;
 }
 
-#nav {
+.nav {
         text-align: center;
         list-style-type: none;
         margin: auto;
@@ -478,7 +479,26 @@ template {
         overflow: hidden;
         background-color: #333;
         border-radius: 5px;
-        vertical-align: top;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    padding: 14px 20px 14px 20px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.nav li a:hover {
+    background-color: #111;
 }
 
 .content {
@@ -493,25 +513,36 @@ template {
 
 #intro1 {
   color: #f2f5f9;
+  font-family: Times;
 }
 #intro2 {
   color: black;
-  font-family: Castellar;
+  font-family: Castellar, Times;
 }
 
-li {
-  display: inline-block;
+#bio {
+        text-align: left;
+        width: 50%;
+        border: 5px;
+        padding: 20px;
+        margin-top: 25px;
+        margin-left: 10%;
+        border-radius: 5px;
+        background-color: #7e7e7e;
+        display: inline-block;
+        width: 50%;
 }
-    
-li a {
+
+#bio p {
+    color: #f2f5f9;
+    font-family: Times;
+    font-size: 18px;
     display: block;
-    color: white;
-    padding: 14px 20px 14px 20px;
-    text-decoration: none;
-    font-family: Arial;
+    overflow: auto;
 }
-    
-li a:hover {
-    background-color: #111;
-    color: #42dff4
+#bio img {
+    float: left;
+    margin-right: 10px;
+    clear: both;
+    overflow: auto;
 }
