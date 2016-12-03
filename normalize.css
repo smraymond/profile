@@ -464,7 +464,6 @@ template {
 
 .main {
     background-color: #dbdde0;
-    padding-top: 100px;
 }
 
 #heading {
@@ -479,27 +478,24 @@ template {
         overflow: hidden;
         background-color: #333;
         border-radius: 5px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 100;
+        vertical-align: top;
 }
 
-.nav li {
+li {
   display: inline-block;
 }
-
-.nav li a {
-    display: inline-block;
+    
+li a {
+    display: block;
     color: white;
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     font-family: Arial;
 }
-
-.nav li a:hover {
+    
+li a:hover {
     background-color: #111;
-   color: #0099ff;
+    color: #42dff4
 }
 
 .content {
@@ -514,11 +510,10 @@ template {
 
 #intro1 {
   color: #f2f5f9;
-  font-family: Times;
 }
 #intro2 {
   color: black;
-  font-family: Castellar, Times;
+  font-family: Castellar;
 }
 
 #bio {
