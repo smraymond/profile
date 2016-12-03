@@ -467,79 +467,77 @@ template {
     padding-top: 100px;
 }
 
-.nav {
-        text-align: center;
-        list-style-type: none;
-        margin: auto;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-        border-radius: 5px;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        z-index: 100;
+#nav {
+  position: fixed;
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 5px;
+  width: 100%;
+  top: 0;
 }
 
-.nav li {
+#nav li {
   display: inline-block;
 }
 
-.nav li a {
-    display: inline-block;
-    color: white;
-    padding: 14px 20px 14px 20px;
-    text-decoration: none;
-    font-family: Arial;
+#nav li a {
+  display: block;
+  color: white;
+  padding: 14px 20px 14px 20px;
+  text-decoration: none;
+  font-family: Arial;
 }
 
-.nav li a:hover {
-    background-color: #111;
+#nav li a:hover {
+  background-color: #111;
+  color: #42dff4
 }
 
-.content {
-        text-align: center;
-        width: 75%;
-        border: 5px;
-        padding: 20px;
-        margin: auto;
-        border-radius: 5px;
-        background-color: #7e7e7e;
+.header {
+  text-align: center;
+  width: 75%;
+  border: 5px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #7e7e7e;
 }
 
 #intro1 {
   color: #f2f5f9;
   font-family: Times;
 }
+
 #intro2 {
   color: black;
   font-family: Castellar, Times;
 }
 
-#bio {
-        text-align: left;
-        width: 50%;
-        border: 5px;
-        padding: 20px;
-        margin-top: 25px;
-        margin-left: 10%;
-        border-radius: 5px;
-        background-color: #7e7e7e;
-        display: inline-block;
-        width: 50%;
+.content {
+  text-align: left;
+  max-width: 100%;
+  margin-top: auto;
+  border: 5px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #7e7e7e;
+  display: inline-block;
 }
 
-#bio p {
-    color: #f2f5f9;
-    font-family: Times;
-    font-size: 18px;
-    display: block;
-    overflow: auto;
+.content p {
+  color: #f2f5f9;
+  font-family: Times;
+  font-size: 18px;
+  display: block;
+  overflow: auto;
 }
-#bio img {
-    float: left;
-    margin-right: 10px;
-    clear: both;
-    overflow: auto;
+.content img {
+  float: right;
+  clear: both;
+  overflow: auto;
+  max-width: 35%;
 }
-
