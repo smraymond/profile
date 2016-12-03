@@ -485,11 +485,11 @@ template {
         z-index: 100;
 }
 
-.nav li {
+li {
   display: inline-block;
 }
 
-.nav li a {
+li a {
     display: block;
     color: red;
     padding: 14px 20px 14px 20px;
