@@ -496,21 +496,6 @@ template {
   color: #42dff4
 }
 
-#right {
-  float: right;
-  vertical-align: top;
-  background-color: #333;
-  height: 100vh;
-  width: 5%;
-}
-
-#left {
-  float: left;
-  background-color: #333;
-  height: 100vh;
-  width: 5%;
-}
-
 .header {
   text-align: center;
   border: 5px;
