@@ -485,21 +485,21 @@ template {
         z-index: 100;
 }
 
-li {
+.nav li {
   display: inline-block;
 }
 
-li a {
+.nav li a {
     display: inline-block;
-    color: red;
+    color: white;
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     font-family: Arial;
 }
 
-li a:hover {
+.nav li a:hover {
     background-color: #111;
-   
+   color: #0099ff;
 }
 
 .content {
