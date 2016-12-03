@@ -490,15 +490,16 @@ li {
 }
 
 li a {
-    display: block;
+    display: inline-block;
     color: red;
     padding: 14px 20px 14px 20px;
     text-decoration: none;
     font-family: Arial;
 }
 
-.nav li a:hover {
+li a:hover {
     background-color: #111;
+   
 }
 
 .content {
