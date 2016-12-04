@@ -567,20 +567,34 @@ template {
   color: #42dff4
 }
 
-#embeded {
-   width: 600px;
-   margin-left: auto;
-   margin-right: auto;
-}
 embed {
    height: 800px;
-   width: 90%;
-   margin-left: auto;
-   margin-right: auto;
+   width: 60%;
+   margin-left: 14%;
 }
 
 @media only screen and (max-width: 500px) {
-    #embeded {
+   #resume {
+     text-align: left;
+     max-width: 90%;
+     margin-top: 50px;
+     margin-left: auto;
+     margin-right: auto;
+     border: 5px;
+     padding: 20px;
+     border-radius: 5px;
+     background-color: #7e7e7e;
+   }
+
+   #resume a {
+     color: black;
+     font-family: Times;
+     font-size: 1.2em;
+     display: block;
+     overflow: auto;
+     text-decoration: none;
+   }
+    embed {
         display: none;
     }
 }
