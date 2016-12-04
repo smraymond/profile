@@ -571,6 +571,8 @@ embed {
    height: 800px;
    width: 50%;
    margin-left: 25%;
+   margin-top: 25px;
+   margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 500px) {
