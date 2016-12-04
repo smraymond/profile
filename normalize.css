@@ -567,6 +567,12 @@ template {
   color: #42dff4
 }
 
+#resume embed {
+   height: 50vh;
+   width: 50%;
+   margin: auto;
+}
+
 @media only screen and (max-width: 500px) {
     #resume embed{
         display: none;
