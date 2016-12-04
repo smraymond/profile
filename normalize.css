@@ -567,7 +567,7 @@ template {
   color: #42dff4
 }
 
-#resume embed {
+embed {
    height: 800px;
    width: 75%;
    margin-left: auto;
