@@ -555,11 +555,12 @@ template {
 }
 
 #resume a {
-  color: #f2f5f9;
+  color: black;
   font-family: Times;
   font-size: 1.2em;
   display: block;
   overflow: auto;
+  text-decoration: none;
 }
 
 #resume a:hover {
