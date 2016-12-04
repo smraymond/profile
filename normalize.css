@@ -567,15 +567,20 @@ template {
   color: #42dff4
 }
 
+#embeded {
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
 embed {
    height: 800px;
-   width: 75%;
+   width: 90%;
    margin-left: auto;
    margin-right: auto;
 }
 
 @media only screen and (max-width: 500px) {
-    embed{
+    #embeded {
         display: none;
     }
 }
