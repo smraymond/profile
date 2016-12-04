@@ -568,7 +568,7 @@ template {
 }
 
 @media only screen and (max-width: 500px) {
-    #resume {
-        background-color: lightblue;
+    #resume embed{
+        display: none;
     }
 }
