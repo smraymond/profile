@@ -18,7 +18,7 @@
   display: inline-block;
 }
 
-#nav li a, #nav li p {
+#nav li a, #about {
   display: block;
   color: white;
   padding: 14px 20px 14px 20px;
@@ -27,9 +27,10 @@
   font-size: 20px;
 }
 
-#nav li a:hover , #nav li p:hover {
+#nav li a:hover , #about:hover {
   background-color: #111;
-  color: #42dff4
+  color: #42dff4;
+  cursor: pointer;
 }
 
 .header {
