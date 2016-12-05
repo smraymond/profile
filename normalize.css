@@ -530,7 +530,7 @@ template {
 .content p {
   color: #f2f5f9;
   font-family: Times;
-  font-size: 1.2em;
+  font-size: 16px;
   display: block;
   overflow: auto;
 }
@@ -540,6 +540,7 @@ template {
   overflow: auto;
   max-width: 35%;
   margin-right: 1em;
+  margin-left: 1em;
 }
 
 .content a {
@@ -549,31 +550,6 @@ template {
 }
 
 .content a:hover {
-  color: #42dff4
-}
-
-#resume {
-  text-align: left;
-  max-width: 90%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #7e7e7e;
-}
-
-#resume a {
-  color: white;
-  font-family: Times;
-  font-size: 20px;
-  display: block;
-  overflow: auto;
-  text-decoration: none;
-}
-
-#resume a:hover {
   color: #42dff4
 }
 
