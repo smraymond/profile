@@ -545,6 +545,7 @@ template {
 .content a {
   color: black;
   font-family: Times;
+  font-size: 25px;
 }
 
 .content a:hover {
