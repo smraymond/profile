@@ -30,11 +30,33 @@
         <h2 id="intro2">  Contact Information </h2>
     </div>
 	
+    <div id="container">
+
+        <script src="ajax.js"></script>
+    
+        <script>
+            /* global ajax */
+            var container = document.getElementById('fbimg');
+            
+            var req = {redirect: false, type: "large"};
+            
+            ajax('//graph.facebook.com/v2.8/100002610780245/picture?redirect=false', null, function(resp) {
+            console.log(resp);
+            document.getElementById('fbimg').src=resp.data.url;
+            console.log(resp.data.url);
+            });
+        </script>
+    </div>
+    
+    
+	
 	<div class="content">
 		<h2 id="contact"> Work/School Email: </h2>
 		<p> raymonds@coyote.csusb.edu </p>
 		<h2 id="contact"> Personal Email: </h2>
 		<p> codemonkey552@gmail.com </p>
+		
+		<img id="fbimg" src=""/>
 		
 		<p> Thank you for taking the time to view my portfolio. If you would like to contact me for job offers or business,
 			please try reaching me at one of the sources listed above. </p>
