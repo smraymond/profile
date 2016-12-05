@@ -542,6 +542,15 @@ template {
   margin-right: 1em;
 }
 
+.content a {
+  color: black;
+  font-family: Times;
+}
+
+.content a:hover {
+  color: #42dff4
+}
+
 #resume {
   text-align: left;
   max-width: 90%;
