@@ -41,6 +41,14 @@
   background-color: #7e7e7e;
 }
 
+.header #intro1 {
+  font-size: 30px;
+}
+
+.header #intro2 {
+  font-size: 35px;
+}
+
 #intro1 {
   color: #f2f5f9;
   font-family: Times;
@@ -66,7 +74,7 @@
 .content p {
   color: #f2f5f9;
   font-family: Times;
-  font-size: 30px;
+  font-size: 28px;
   display: block;
   overflow: auto;
 }
@@ -98,6 +106,14 @@ embed {
 }
 
 @media only screen and (max-width: 500px) {
+    .header #intro1 {
+      font-size: 20px;
+    }
+
+    .header #intro2 {
+      font-size: 25px;
+    }
+    
     .content p {
       color: #f2f5f9;
       font-family: Times;
