@@ -18,7 +18,7 @@
   display: inline-block;
 }
 
-#nav li a {
+#nav li a, #nav li p {
   display: block;
   color: white;
   padding: 14px 20px 14px 20px;
@@ -27,7 +27,7 @@
   font-size: 20px;
 }
 
-#nav li a:hover {
+#nav li a:hover , #nav li p:hover {
   background-color: #111;
   color: #42dff4
 }
