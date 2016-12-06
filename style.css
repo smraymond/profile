@@ -117,6 +117,10 @@ embed {
   background-color: #3B5998;
 }
 
+#facebook:hover {
+  border: solid #42dff4;
+}
+
 #facebook p {
   float: left;
   font-size: 33px;
