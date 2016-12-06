@@ -107,15 +107,25 @@ embed {
    margin-bottom: 25px;
 }
 
-.facebook {
-  text-align: left;
+#facebook {
+  text-align: center;
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   border: 5px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
   background-color: #3B5998;
+}
+
+#facebook p {
+  float: left;
+  font-size: 33px;
+  font-family: Tahoma;
+}
+
+#facebook img {
+  float: right;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 500px) {
