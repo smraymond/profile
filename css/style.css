@@ -1,1 +1,328 @@
+/** Body **/
+body {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bevan', Open sans;
+}
+
+#about, #project {
+    padding-top: 50px;
+}
+/** Body **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** Navigation **/
+.topnav {
+    font-size: 14px; 
+}
+
+.navbar {
+	background-color: #e4e6e5;
+	background-color: rgba( 228, 230, 229, .85 );
+	border-bottom: 0 none;
+	font-size: 12px;
+	transition: .25s all linear;
+}
+
+.navbar-default {
+	background-color: rgba( 0, 0, 0, .5 );
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+	margin: 0 auto;
+	color: #5cb85c;
+}
+
+.navbar-default .navbar-header .navbar-brand small {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #e4e6e5;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #5cb85c;
+  background: transparent;
+  text-shadow: none;
+  border-bottom: none;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #5cb85c;
+  background: transparent;
+  border-bottom: 4px solid #5cb85c;
+  text-shadow: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #111111;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #111111;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #5cb85c;
+}
+
+.navbar-default .navbar-collapse{
+  border: none;
+}
+
+@media(max-width:767px) {
+    .navbar {
+    	padding-bottom: 10px;
+    }
+}
+
+/** Navigation **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** Introduction **/
+.hero-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: -webkit-linear-gradient(rgb(200,200,200), rgb(255,255,255));
+    background-size: cover;
+}
+
+.hero-text {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.hero-text h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 5em;
+    font-family: 'Bevan', cursive;
+}
+
+.hero-divider {
+    width: 400px;
+    border-top: 1px solid #5cb85c;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.hero-text h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+/** Introduction **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** About **/
+.lead {
+    font-size: 22px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background: rgb(200,200,200); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(200,200,200), rgb(255,255,255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(200,200,200), rgb(255,255,255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(200,200,200), rgb(255,255,255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(200,200,200), rgb(255,255,255)); /* Standard syntax */
+}
+
+.content-section-b {
+    padding: 50px 0;
+    background: rgb(255,255,255); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* Standard syntax */
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #5cb85c;
+}
+
+@media(max-width:767px) {
+    .lead {
+        font-size: 18px;
+    }
+}
+/** About **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** Project **/
+
+.project-title
+{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.center-heading-spacer {
+    width: 200px;
+    border-top: 3px solid #5cb85c;
+}
+
+.filter-btn {
+    margin: 5px;
+}
+
+.project_product
+{
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.project_product:hover
+{
+    cursor: pointer;
+    color: #5cb85c;
+}
+
+.project_product img
+{
+    margin: 0 auto;
+}
+
+.project_product p
+{
+    bottom: 0;
+    font-size: 1.5em;
+}
+
+@media(max-width:480px) {
+    .project_product p
+    {
+        font-size: 1em;
+    }
+}
+/** Project **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** Contact **/
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+ul.banner-social-buttons {
+    float: right;
+    margin-top: 75px;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+/** Contact **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** Footer **/
+footer {
+    padding: 20px 0;
+    background: rgb(200,200,200); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(255,255,255), rgb(200,200,200)); /* Standard syntax */
+}
+/** Footer **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+
+/** iFrame **/
+iframe {
+    height: 90vh;
+    width: 85%;
+}
+
+@media(max-width:767px) {
+    iframe {
+        height: 65vh;
+        width: 100%;
+    }
+}
+/** iFrame **/
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
