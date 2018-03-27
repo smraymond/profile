@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bigfoot Escape</title>
+  <meta charset="UTF-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+ 
+  <link rel="stylesheet" href="css/bigfoot.css" type="text/css" media="screen">
+  <script type="text/javascript" src="js/jquery.2.1.1.min.js"></script>
+  
+  <!--FAVICONS -->  
+  <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
+  <meta name="theme-color" content="#ffffff">
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <!--main menu-->
+    <div id="menu">
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Bigfoot Escape</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="button play">Start Game</button>
+            <a href="index.html#home"><button class="button return">Return</button></a>
+            <button class="button credits">Credits</button>
+        </div>
+    </div>
+    <!--game over menu-->
+    <div id="gameOver" style="display:none;">
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 id="GO" >Game Over</h1>
+                    </div>
+                    <br><br>
+                    <div class="col-sm-12">
+                        <h3>You evaded Bigfoot for...</h3>
+                    </div>
+                    <div class="col-sm-12">
+                        <h1><span id="score"></span> seconds!</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="button restart">Try Again</button>
+            <button class="button credits">Credits</button>
+        </div>
+    </div>
+    <!--credits menu-->
+    <div id="credit" style="display:none;">
+        <div id="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>Credits</h1>
+                    </div>
+                </div>
+                <h2 class="bigfoot_text2">Developers</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Scott Raymond</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Robert Mettetal</h3>
+                    </div>
+                </div>
+                <h2>Music</h2>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Kirby's Dream Land: Mint Breath</h3>
+                    </div>
+                </div>
+                <h2>Images</h2>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>We do not own any of the images used in the menu screens.</h3>
+                    </div>
+                </div>
+                
+                <button class="button back">Back</button>
+            </div>
+
+        </div>
+    </div>
+    
+    <canvas id="canvas" width="800" height="480">
+        <p>You're browser does not support the required functionality to play this game.</p>
+    </canvas>
+  </div>
+  <script type="text/javascript" src="js/bigfoot.js"></script>
+</body>
+
+<script>
+    $('.credits').click(function() {
+        $('#menu').hide();
+        $('#gameOver').hide();
+        $('#credit').show();
+    });
+    
+    $('.back').click(function() {
+        location.reload();
+    });
+    
+</script>
+
+</html>
