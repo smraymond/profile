@@ -1,0 +1,104 @@
+body {
+  font-family: arial, sans-serif;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: Impact;
+}
+
+h2{
+  font-size: 30px;
+  font-family: Arial;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Arial;
+}
+
+.wrapper {
+  background: -webkit-linear-gradient(rgb(200,200,200), rgb(255,255,255));
+  width: 100%;
+  height: 480px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+canvas {
+  border: 2px solid black;
+  width: 800px;
+  height: 480px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline;
+  margin: 10px;
+}
+
+.play, .credits, .back, .restart, .return {
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+}
+
+.play {
+  background-color: #4CAF50;
+  left: 0;
+}
+
+.credits, .back {
+  background-color: #008CBA;
+  right: 0;
+}
+
+.restart {
+  background-color: #f44336;
+  left: 0;
+}
+
+.return {
+  background-color: #f0ad4e;
+  bottom: 0;
+}
+
+.play:hover, .credits:hover, .back:hover, .restart:hover, .return:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+#GO {
+  color: red !important;
+}
+
+#menu, #gameOver, #credit {
+  position: absolute;
+  width: 800px;
+  height: 480px;
+  border: 1px solid black;
+  text-align: center;
+  background-size: cover;
+  display: inline;
+  margin: 10px;
+}
+
+#menu {
+  background-image: url("../img/bigfoot/menu-bg.jpg");
+}
+
+#credit {
+  background-image: url("../img/bigfoot/credits.jpg");
+}
+
+#gameOver {
+  background-image: url("../img/bigfoot/game-over.jpg");
+}
