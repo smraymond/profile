@@ -30,7 +30,6 @@
             </div>
             <button class="button play">Start Game</button>
             <a href="index.html#home"><button class="button return">Return</button></a>
-            <button class="button credits">Credits</button>
         </div>
     </div>
     <!--game over menu-->
@@ -90,17 +89,26 @@
 
         </div>
     </div>
+    <!--game-->
+    <div id="game" style="display:none;">
+        <div id="main">
+            <button class="button space">Press Space!</button>
+        </div>
+    </div>
     
     <canvas id="canvas" width="800" height="480">
         <p>You're browser does not support the required functionality to play this game.</p>
     </canvas>
   </div>
+  
+  
   <script type="text/javascript" src="js/bigfoot.js"></script>
 </body>
 
 <script>
     $('.credits').click(function() {
         $('#menu').hide();
+        $('#game').hide();
         $('#gameOver').hide();
         $('#credit').show();
     });
@@ -108,6 +116,17 @@
     $('.back').click(function() {
         location.reload();
     });
+    
+    (function() {
+     	var e = new Event('keydown');
+     	var e2 = new Event('keyup');
+    	e.which = e.keyCode = 32; // 32 is the keycode for the space bar
+    	e2.which = e2.keyCode = 32; // 32 is the keycode for the space bar
+    	$('.space').click(function() {
+        document.dispatchEvent(e); 
+        setTimeout(function() { document.dispatchEvent(e2);}, 500);
+      });
+    })();
     
 </script>
 

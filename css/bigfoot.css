@@ -40,7 +40,7 @@ canvas {
   margin: 10px;
 }
 
-.play, .credits, .back, .restart, .return {
+.play, .credits, .back, .restart, .return, .space{
   border-radius: 5px;
   border: 1px solid black;
   color: white;
@@ -49,6 +49,7 @@ canvas {
   font-size: 16px;
   position: absolute;
   bottom: 0;
+  padding-bottom: 20px;
 }
 
 .play {
@@ -68,10 +69,16 @@ canvas {
 
 .return {
   background-color: #f0ad4e;
-  bottom: 0;
+  right: 0;
 }
 
-.play:hover, .credits:hover, .back:hover, .restart:hover, .return:hover{
+.space {
+  background-color: #f0ad4e;
+  width: 100%;
+  left: 0;
+}
+
+.play:hover, .credits:hover, .back:hover, .restart:hover, .return:hover, .space:hover{
     filter: brightness(85%);
     cursor: pointer;
 }
@@ -80,7 +87,7 @@ canvas {
   color: red !important;
 }
 
-#menu, #gameOver, #credit {
+#menu, #gameOver, #credit, #game {
   position: absolute;
   width: 800px;
   height: 480px;
@@ -101,4 +108,28 @@ canvas {
 
 #gameOver {
   background-image: url("../img/bigfoot/game-over.jpg");
+}
+
+@media screen and (max-width:767px), screen and (max-device-width:767px) {
+  canvas {
+    border: 2px solid black;
+    width: 95vw;
+    height: 45vh;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline;
+    margin: 10px;
+  }
+  
+  #menu, #gameOver, #credit, #game {
+    position: absolute;
+    width: 95vw;
+    height: 45vh;
+    border: 1px solid black;
+    text-align: center;
+    background-size: cover;
+    display: inline;
+    margin: 10px;
+  }
 }

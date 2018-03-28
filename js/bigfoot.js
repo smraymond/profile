@@ -114,6 +114,7 @@
   /*  Starts the Game, when button is clicked. */
   $('.play').click(function() {
     $('#menu').hide();
+    $('#game').show();
     startGame();
   });
   
@@ -160,7 +161,7 @@
   };
 
   /**
-   * Creates a Spritesheet
+   *Creates a Spritesheet
    * @param {string} - Path to the image.
    * @param {number} - Width (in px) of each frame.
    * @param {number} - Height (in px) of each frame.
@@ -385,6 +386,7 @@
         assetLoader.sounds.gameOver2.play();
         
         $('#score').html(Math.floor(score));
+        $('#game').hide();
         $('#gameOver').show();
       }
       
@@ -430,14 +432,14 @@
     player.speed  = 6;
     player.distance = 600;
     player.y = 275;
-    player.sheet  = new SpriteSheet('img/bigfoot/snake-running.png', player.width, player.height);
+    player.sheet  = new SpriteSheet('/img/bigfoot/snake-running.png', player.width, player.height);
     player.anim   = new Animation(player.sheet, 8, 0, 5);
     
     // setup the bigfoot
     bigfoot.width  = 172;
     bigfoot.height = 138;
     bigfoot.speed  = 3;
-    bigfoot.sheet  = new SpriteSheet('img/bigfoot/bigfoot-sheet.png', bigfoot.width, bigfoot.height);
+    bigfoot.sheet  = new SpriteSheet('/img/bigfoot/bigfoot-sheet.png', bigfoot.width, bigfoot.height);
     bigfoot.anim   = new Animation(bigfoot.sheet, 4, 0, 6);
   
   
