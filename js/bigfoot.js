@@ -432,14 +432,14 @@
     player.speed  = 6;
     player.distance = 600;
     player.y = 275;
-    player.sheet  = new SpriteSheet('img/bigfoot/snake-running.png', player.width, player.height);
+    player.sheet  = new SpriteSheet('/img/bigfoot/snake-running.png', player.width, player.height);
     player.anim   = new Animation(player.sheet, 8, 0, 5);
     
     // setup the bigfoot
     bigfoot.width  = 172;
     bigfoot.height = 138;
     bigfoot.speed  = 3;
-    bigfoot.sheet  = new SpriteSheet('img/bigfoot/bigfoot-sheet.png', bigfoot.width, bigfoot.height);
+    bigfoot.sheet  = new SpriteSheet('/img/bigfoot/bigfoot-sheet.png', bigfoot.width, bigfoot.height);
     bigfoot.anim   = new Animation(bigfoot.sheet, 4, 0, 6);
   
   
