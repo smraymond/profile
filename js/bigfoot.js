@@ -417,7 +417,7 @@
     assetLoader.sounds.bg.currentTime = 0;
     assetLoader.sounds.bg.loop = true;
     assetLoader.sounds.bg.play();
-	assetLoader.sounds.gameOver.play();
+    assetLoader.sounds.gameOver.play();
     assetLoader.sounds.gameOver2.play();
     assetLoader.sounds.gameOver.pause();
     assetLoader.sounds.gameOver2.pause();
